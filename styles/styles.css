@@ -1,0 +1,1061 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/*----------          
+|Index Start|    
+ ----------- */
+
+/* -> Mobile First <- */
+
+
+html{
+    height: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template: 
+        "header" 120px 
+        "main" auto
+        "footer" 120px ;
+    min-height: 100%;
+}
+
+.header{
+    grid-area:header;
+}
+
+.main{
+    grid-area: main;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+header{
+    position: fixed;
+    background-color:black;
+    width: 100%;
+    text-transform: uppercase;
+    z-index: 10;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+/*LOGO START*/
+
+
+header .hamburger i{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 120px;
+    font-family: 'PT Serif', serif;
+}
+
+.logo{
+    width:2.5rem;
+    margin-top:5px;
+}
+
+.title{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-left: 22px;
+}
+
+.separador{
+    width: 30px;
+    height: 1px;
+    background-color:gold;
+}
+
+.subtitle{
+    letter-spacing: 5px;
+    font-size: 0.625rem;
+    margin-top: 5px;
+    margin-left:5px;
+    color: white;
+}
+
+/* LOGO END */
+
+/* NAV START */
+
+ .nav-input{
+    display: none;
+}
+
+.nav-label{
+    display: block;
+}
+
+.nav-menu{
+    position: fixed;
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(214, 173, 97);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-item{
+    text-decoration: none;
+    color:white;
+    font-size:1.5rem;
+    letter-spacing:2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-input:checked + .nav-menu{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* NAV END */
+
+
+/* ICONS START */
+
+ .socials{
+   display:flex; 
+   flex-direction:column;
+   align-items: center; 
+   justify-content: space-around;
+   height:100px;
+}  
+
+.socials i{
+    color:white;
+    font-size: 1.7rem;
+}
+
+.socials i:hover{
+    color:gold;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+/* ICONS END */
+
+
+
+
+/*-------------------
+ Main Section Start
+ --------------------*/
+
+ /* Big Carrusel Start */
+
+ .slider{
+    position: relative;
+    width: 90%;
+    overflow:hidden;
+    margin-left: 5%;
+    border-radius: 10px;
+    margin-top:1.5rem;
+}
+
+.images{
+    display:flex;
+    width:100%;
+    height: 25rem;
+}
+
+
+.images img{
+    flex-shrink:0;
+    width: 100%;
+    transition: all 1s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.dots label{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    transition:  all 0.5s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dots label:hover{
+    background: black;
+}
+
+#img1:checked ~ .ice1{
+    margin-left: 0;
+}
+
+#img2:checked ~ .ice2{
+    margin-left: -100%;
+}
+#img3:checked ~ .ice3{
+    margin-left: -200%;
+}
+#img4:checked ~ .ice4{
+    margin-left: -300%;
+}
+
+/* Big Carrusel End */
+
+
+
+/* Flavours Section Start */
+
+h2{
+    font-size: 1.2rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    text-align: center;
+}
+
+.flavours{
+display:grid;
+gap: 10px;
+grid-template-columns: auto auto; 
+}
+
+.flavours p{
+text-align: center;
+width: 200px;
+font-weight:bold;
+letter-spacing: 2px;
+}
+
+.primeraFila > div, 
+.segundaFila > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.primeraFila img, 
+.segundaFila img{
+width: 150px;
+filter: drop-shadow(0 0 1rem rgb(95, 92, 92));
+}
+
+/* Flavours Section End */
+
+
+
+/* Footer Start */
+
+footer{
+    background-color: black;
+    font-family: 'PT Serif', serif;
+    color:white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-footer-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo-footer-container h3{
+    letter-spacing:2px;
+    font-size: 1em;
+}
+
+.logo-footer{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 18px;
+}
+
+.author{
+   color:white;
+}
+
+.author:hover{
+    color:gold;
+    cursor:pointer;
+}
+
+.follow{
+    font-size:1em;
+    letter-spacing: 5px;
+}
+
+.socials-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.socials-footer i{
+    color:white;
+    font-size:2rem;
+}
+
+.socials-footer i:hover{
+    color:gold;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+/*----------------------
+ Tablet Responsive Start
+ ----------------------- */
+
+@media screen and (min-width:768px) {
+
+    header .hamburger i{
+        font-size: 3.125rem;
+    }
+
+    .logo{
+        width: 3.125rem;
+    }
+
+    .socials i{
+        font-size: 2.3rem;
+    }
+        
+
+    .images{
+     height:31.25rem ;
+    }
+
+    .dots label{
+     height: 1.3rem;
+    width: 1.3rem;
+    }
+
+
+    h2{
+        font-size: 1.4rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .flavours{
+        grid-template-columns: none;
+    }
+
+    .primeraFila, .segundaFila{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .segundaFila{
+        margin-bottom: 2rem;
+    }
+
+    footer .copyright{
+        display: flex;
+        font-size:1.1rem ;
+    }
+
+    .socials-footer i{
+        font-size: 2.3rem;
+    }
+}
+
+/* Tablet Responsive End */
+
+/*-----------------------
+ Desktop Responsive Start
+ ------------------------ */
+
+    @media screen and (min-width:1200px) {
+
+        header{
+            justify-content: space-evenly
+        }
+
+        .logo:hover{
+            cursor: pointer;
+        }
+
+        .hamburger i{
+            display: none;
+        }
+
+        .socials{
+            flex-direction: row;
+            justify-content: center;
+            width:fit-content;
+        }
+
+        .logo-container{
+            order: -1;
+            margin-right: 2rem;
+        }
+
+        .socials i{
+            margin-left:50px; 
+            font-size: 2.5rem;
+        }
+
+        .socials i:hover{
+            color:gold;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+
+        .nav-menu{
+           position: static;
+           top: 0;
+           background-color:transparent;
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        nav ul{
+            flex-direction: row;
+             justify-content: space-around;
+        }
+
+        .nav-item{
+            font-size: 1.1rem;
+        }
+
+        .nav-item:hover{
+            color:gold;
+            transition: 1s ease;
+            cursor: pointer;
+        }
+
+        .hamburger{
+            width: 75rem;
+        }
+
+        .slider{
+            margin-top: 4rem;
+        }
+
+       .images{
+           height: 37.5rem;
+       }
+
+       .dots label{
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 3rem;
+       }
+
+       h2{
+           font-size: 1.7rem;
+       }
+
+       .primeraFila, 
+       .segundaFila  {
+           justify-content: center;   
+       }
+
+       .segundaFila{
+        margin-bottom: 5rem;
+       }
+
+       .primeraFila > div,
+       .segundaFila > div{
+           margin-left: 5rem;
+       }
+
+       .primeraFila img, 
+       .segundaFila img{
+           filter:none;
+       }
+      
+       .primeraFila img:hover, 
+       .segundaFila img:hover{
+        transform:scale(1.1);
+        transition-timing-function:ease-in-out;
+        filter: drop-shadow(0 0 1rem rgb(95, 92, 92));
+        cursor: pointer;
+       }
+
+       .follow{
+           font-size:1.5rem;
+       }
+
+       .socials-footer i{
+           font-size: 2.5rem;
+       }
+
+    }
+
+    /*----------------------
+      Desktop Responsive End
+      ----------------------- */
+
+/*--------
+|Index End|
+ --------- */
+
+ /*-------------
+  |Sabores Start|
+   ------------- */
+
+   .sabores-grid-container{
+       display: grid;
+       grid-template:
+        "cremas" 
+        "dulce-de-leche" 
+        "frutales" 
+        "chocolates" 
+        "veganos" 
+        "especiales" 
+        "postres" 
+        "sin-lactosa"; 
+   }
+
+   .cremas{
+       grid-area:cremas;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   .dulce-de-leche{
+       grid-area: dulce-de-leche;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   .frutales{
+       grid-area: frutales;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   .chocolates{
+       grid-area: chocolates;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   .veganos{
+       grid-area: veganos;
+   }
+
+   .especiales{
+       grid-area:especiales; 
+   }
+
+   .postres{
+       grid-area: postres;
+   }
+
+   .sin-lactosa{
+       grid-area: sin-lactosa;
+   }
+
+  .sabores-grid-container div > h3{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+    background-color: grey;
+    width: 90%;   
+    margin-left: 5%;
+    margin-bottom: 5%; 
+    margin-top:5%;
+    }
+
+      .flavours-card{
+          margin-bottom: 1.5rem;
+      }
+
+     .flavours-card > img{
+        width: 10rem;
+        filter: drop-shadow(0 0 0.4rem rgb(95, 92, 92));
+        border-radius: 1rem;
+    }
+
+   .primera-fila-sabores{
+       display: grid;
+       justify-content: center;
+       text-align: center;
+   }
+
+   .segunda-fila-sabores{
+    display: grid;
+    justify-content: center;
+    text-align: center;   
+   }
+
+   /*Tablet responsive start*/
+
+   @media screen and (min-width:768px) {
+    
+        .cremas{
+            grid-template-columns: auto;
+        }
+
+        .dulce-de-leche{
+            grid-template-columns: auto;
+        }
+
+        .frutales{
+            grid-template-columns: auto;
+        }
+
+        .chocolates{
+            grid-template-columns: auto;
+        }
+
+        .flavours-card > img{
+            width: 8.5rem;
+        }
+
+       .primera-fila-sabores{
+           display: flex;
+           justify-content: space-evenly;
+       }
+       .segunda-fila-sabores{
+           display: flex;
+           justify-content: space-evenly;
+       }
+   }
+   
+   /*tablet responsive end */
+
+   /*Desktop responsive Start*/
+
+   @media screen and (min-width:1200px) {
+
+    .sabores-grid-container div > h3{
+      margin-top: 2.5rem;
+    }
+    .flavours-card > img{
+        width: 10rem;
+    }
+
+    .flavours-card > img:hover{
+        transform:scale(1.1);
+        transition-timing-function:ease-in-out;
+        filter: drop-shadow(0 0 1rem rgb(95, 92, 92));
+        cursor: pointer;
+    }
+
+    .flavours-card > p{
+        padding-top: .5rem;
+    }
+
+    .primera-fila-sabores{
+        justify-content:space-evenly;
+        margin-bottom: 2rem;
+    }
+       
+    .segunda-fila-sabores{
+        justify-content: space-evenly;
+    }
+   }
+
+   @media screen and (min-width:1600px){
+    .sabores-grid-container div > h3{
+        width: 85%;
+        margin-left:7.5%;
+        margin-bottom: 3rem;
+        letter-spacing: 0.3rem;
+      }
+
+      .sabores-grid-container h3:hover{
+        background-color: goldenrod;
+        color: white;
+        cursor: pointer;
+    }
+      
+      .flavours-card > img{
+        width: 15rem;
+    }
+
+    .flavours-card > p{
+        font-size: 1.2rem;
+    }
+   
+   }
+
+   /*Desktop responsive End*/
+ /*-----------
+  |Sabores End|
+   ----------- */
+
+   
+ /*--------------------
+  |Sobre Nosotros Start|
+   ------------------- */
+   .about-grid-container{
+       display: grid;
+       grid-template:
+       "team-work"auto
+       "story"auto;
+   }
+
+   .team-work{
+       grid-area:team-work;
+       text-align: center;
+   }
+
+   .story{
+       grid-area:story;
+       text-align: center;
+       margin-bottom: 2.5rem;
+   }
+
+   .story > h3{
+       margin-top:1rem;
+       margin-bottom:1rem;
+   }
+
+   .about-grid-container img{
+       width: 25rem;
+   }
+   
+   /* Tablet responsive Start */
+
+   @media screen and (min-width:768px) {
+    
+    .about-grid-container img{
+        width: 35rem;
+    }
+
+   }
+
+   /* Tablet responsive End */
+
+   /* Desktop responsive Start*/
+
+   @media screen and (min-width:1200px){
+    .about-grid-container img{
+        width: 40rem;
+    }
+   }
+
+   @media screen and (min-width:1600px){
+
+
+    .about-grid-container{
+        display:flex;
+        align-items: center;
+    }
+
+    .team-work{
+        margin-bottom: 2rem;
+        margin-left: 5%;
+    }
+
+    .story{
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .about-grid-container img{
+        width: 45rem;
+    }
+
+   }
+
+    /* Desktop responsive End*/
+ /*------------------
+  |Sobre Nosotros End|
+   ------------------ */
+
+
+/*------------------
+|Dónde estamos Start|
+ ------------------- */
+
+ .where-grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .where-title{
+     font-size: 1.5rem;
+ }
+
+
+ .direction img{
+     width: 30rem;
+ }
+
+ .direction{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .map{
+     margin-top: 2rem;
+     width: 25rem;
+     height: 20rem;
+     margin-bottom: 3rem;
+ }
+
+ /*Tablet responsive Start*/
+
+ @media screen and (min-width:768px) {
+
+    .where-title{
+        font-size: 2rem;
+    }
+    
+    .direcion ul li{
+        font-size: 1.5rem;
+    }
+    .direction img{
+      width: 42rem;
+    }
+
+    .map{
+        width: 40rem;
+        height: 25rem;
+    }
+ }
+
+ /*Tablet responsive end*/
+
+ /*Desktop responsive start*/
+
+ @media screen and (min-width:1200px){
+     .where-grid-container{
+         flex-direction: row;
+         justify-content: center;
+     }
+
+     .where-title{
+         margin-top: 1rem;
+     }
+
+     .direction img{
+        width: 30rem;
+        margin-left:3rem;
+      }
+
+      .direction{
+          margin-bottom: 3rem;
+      }
+
+      .map{
+          width: 30rem;
+          margin-left: 10%;
+          margin-bottom:3rem;
+          height: 30rem; 
+      }
+ }
+
+ @media screen and (min-width:1600px){
+
+    .where-grid-container{
+        justify-content: space-evenly;
+    }
+
+    .direction{
+        margin-left:10%;
+    }
+
+    .direction img{
+        width: 40rem;
+      }
+
+      .map{
+          width: 50rem;
+          margin-right: 10%;
+          margin-bottom: 7%;
+      }
+ }
+
+  /*Desktop responsive End*/
+
+/*----------------
+|Dónde estamos End|
+ ----------------- */
+
+/*--------------
+ |Contacto Start|
+  -------------- */
+  .contact-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-title{
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom:1rem;
+  }
+
+.contact-container img{
+   display: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    height:38rem;
+    background-color:black;
+    border-radius:1rem;
+    width: 25rem;
+}
+
+form input{
+    border-radius:5px;
+    width: 18rem;
+    height:2rem;
+    outline: none;
+    padding:10px;
+}
+
+form textarea{
+    border-radius:5px;
+    width: 18rem;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    height: 210px;
+}
+
+form input::placeholder{
+    color: grey;
+}
+
+.send input{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1.8rem;
+}
+
+/*Tablet responsive Start*/
+
+@media screen and (min-width:768px){
+
+    .contact-title{
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom:0;
+    }
+
+    .contact-container img{
+        display: none;
+    }  
+}
+
+/*Tablet responsive End*/
+
+/*Desktop responsive Start*/
+
+@media screen and (min-width:1200px){
+    .contact-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contact-container img {
+        display:inline;
+        width: 40rem;
+    }
+
+    .send input:hover{
+        background-color: goldenrod;
+        color: white;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width:1600px){
+    
+    .contact-container img {
+        width: 45rem;
+    }
+
+    form{
+        width: 30rem;
+    }
+
+    form input{
+        height: 2.5rem;
+        width: 22rem;
+    }
+
+    form textarea{
+        width: 22rem;
+    }
+
+    .send input:hover{
+        background-color: goldenrod;
+        color: white;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+}
+
+/*Desktop responsive End*/
+
+  /*-----------
+ |Contacto End|
+  -------------*/

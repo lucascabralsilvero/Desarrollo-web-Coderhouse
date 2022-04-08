@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="shortcut icon" href="/assets/favicon/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;300&display=swap" rel="stylesheet"/>
+    <title>Makalu Helados</title>
+</head>
+<body class="grid-container">
+    <header class="header" >
+        <div class="hamburger">
+            <label for="menu" class="nav-label"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="menu" class="nav-input">
+            <nav class="nav-menu">
+              <ul>
+                <li><a class="nav-item" href="#title">Inicio</a></li>
+                <li><a class="nav-item" href="sabores.html">Sabores</a></li>
+                <li><a class="nav-item" href="sobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a class="nav-item" href="dondeEstamos.html">¿Dónde estamos?</a></li>
+                <li><a class="nav-item" href="#title">Contacto</a></li>
+              </ul>
+            </nav>
+        </div>
+        <div class="logo-container">
+            <img class="logo" src="../assets/makaluLogo.png" alt="montaña helada" />
+            <h1 class="title">Makalu</h1>
+            <div class="separador"></div>
+            <h3 class="subtitle">Helados</h3>
+          </div>
+          
+          <div class="socials">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+    </header>
+
+    <main class="main">
+      <h2 class="contact-title">Contáctanos!</h2>
+      <section class="contact-container">
+          <img src="../assets/Contact us-bro.png" alt="contactanos">
+        
+        <form>  
+          <div>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" placeholder="Nombre"/>
+          </div>
+          <br />
+          <div>
+            <label for="apellido"></label>
+            <input type="text" name="apellido" placeholder="Apellido" />
+          </div>
+          <br />
+          <div>
+            <label for="email"></label>
+            <input type="email" name="email" required placeholder="Email"/>
+          </div>
+          <br />
+          <div>
+            <label for="asunto"></label>
+            <input type="text" name="nombre" placeholder="Asunto" />
+          </div>
+          
+          <div>
+            <label for="mensaje"></label><br />
+            <textarea
+              name="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escribe un mensaje"
+            ></textarea>
+          </div>
+          <div class="send">
+            <label for="enviar"></label>
+            <input type="submit" name="enviar" />
+          </div>  
+        </form>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="logo-footer-container">
+            <img class="logo-footer" src="../assets/makaluLogo.png" alt="montaña helada"/>
+            <h3>Makalu </h3>
+            <h3>Helados</h3>
+          </div>
+            <div class="copyright">
+              <p class="copy">Makalu helados ©</p>
+              <p>&nbspby <a class="author" href="https://www.linkedin.com/in/lucas-cabral-silvero/" target="_blank"><span >Lu.Dev</span></a></p>
+            </div>       
+            <div class="socials-footer">
+               <span class="follow">Seguinos!</span>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f26be2d2ef.js"crossorigin="anonymous"></script>
+  </body>
+</html>
