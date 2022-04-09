@@ -779,6 +779,7 @@ footer{
 
    .about-grid-container img{
        width: 25rem;
+       animation: bounce 1.5s infinite;
    }
    
    /* Tablet responsive Start */
@@ -848,6 +849,7 @@ footer{
 
  .direction img{
      width: 30rem;
+     animation: bounce 1.5s infinite;
  }
 
  .direction{
@@ -959,6 +961,7 @@ footer{
 
 .contact-container img{
    display: none;
+   animation: bounce 1.5s infinite;
 }
 
 form{
@@ -1069,6 +1072,19 @@ form input::placeholder{
 }
 
 /*Desktop responsive End*/
+
+/*---------
+ Animations 
+ ----------*/
+@keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+  }
+
 
   /*-----------
  |Contacto End|
