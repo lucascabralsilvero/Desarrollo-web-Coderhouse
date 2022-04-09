@@ -134,7 +134,7 @@ nav ul{
     text-decoration: none;
     color:white;
     font-size:1.5rem;
-    letter-spacing:2px;
+    /* letter-spacing:2px; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -473,14 +473,28 @@ footer{
 
         .nav-item{
             font-size: 1.1rem;
+            --clippy:polygon(0 0, 0 0, 0 94%, 0% 100%);
         }
 
+        
+        .nav-item::after{
+            content:" "; 
+            display:block; 
+            background: #fff;
+            width: 90%;
+            margin-top: 3px;
+            height: 1px;
+            clip-path: var(--clippy);
+            transition: clip-path .3s; 
+        }
+        
         .nav-item:hover{
             color:gold;
-            transition: 1s ease;
+            /* transition: 1s ease; */
             cursor: pointer;
+            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         }
-
+        
         .hamburger{
             width: 75rem;
         }
@@ -743,8 +757,8 @@ footer{
    .about-grid-container{
        display: grid;
        grid-template:
-       "team-work"auto
-       "story"auto;
+       "team-work"
+       "story";
    }
 
    .team-work{
