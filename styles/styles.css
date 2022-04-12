@@ -743,8 +743,8 @@ footer{
    .about-grid-container{
        display: grid;
        grid-template:
-       "team-work"auto
-       "story"auto;
+       "team-work"
+       "story";
    }
 
    .team-work{
