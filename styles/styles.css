@@ -1073,9 +1073,9 @@ form input::placeholder{
 
 /*Desktop responsive End*/
 
-/*---------
- Animations 
- ----------*/
+/*---------------------
+ Keyframes - Animations 
+ ----------------------*/
 @keyframes bounce {
     0% {
       tranform: translate(0, 4px);
