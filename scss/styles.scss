@@ -1,0 +1,23 @@
+/* Imports */
+@import "header";  
+
+/* Configuración Global */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template:
+      "header" 120px
+      "main" auto
+      "footer" 120px;
+    min-height: 100%;
+}

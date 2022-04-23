@@ -1,0 +1,220 @@
+.header {
+  grid-area: header;
+}
+
+header {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .hamburger i {
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 120px;
+    font-family: "PT Serif", serif;
+  }
+
+  .logo {
+    width: 2.5rem;
+    margin-top: 5px;
+  }
+
+  .title {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-left: 22px;
+  }
+
+  .separador {
+    width: 30px;
+    height: 1px;
+    background-color: gold;
+  }
+
+  .subtitle {
+    letter-spacing: 5px;
+    font-size: 0.625rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+  }
+
+  /* Nav Start */
+
+  .hamburger {
+    .nav-input {
+      display: none;
+    }
+
+    .nav-label {
+      display: block;
+    }
+
+    .nav-input:checked + .nav-menu {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 120px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgb(214, 173, 97);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: 0.3s ease-in-out;
+
+      ul {
+        li {
+          list-style-type: none;
+        }
+
+        .nav-item {
+          text-decoration: none;
+          color: white;
+          font-size: 1.5rem;
+          /* letter-spacing:2px; */
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+  }
+
+  /* Nav End */
+
+  /* Icons Start */
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+
+    i {
+      color: white;
+      font-size: 1.7rem;
+
+      &:hover {
+        color: gold;
+        transition: 1s ease;
+        cursor: pointer;
+      }
+    }
+  }
+  /* Icons End */
+}
+
+/* Tablet Responsive */
+
+@media screen and (min-width: 768px) {
+  header {
+    .hamburger {
+      i {
+        font-size: 3.125rem;
+      }
+    }
+
+    .logo-container {
+      .logo {
+        width: 3.125rem;
+      }
+
+      .socials {
+        i {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+}
+
+/* Desktop Responsive */
+
+@media screen and (min-width: 1200px) {
+  header {
+    justify-content: space-evenly;
+
+    .logo-container {
+      order: -1;
+      margin-right: 2rem;
+
+      .logo {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .hamburger {
+      width: 75rem;
+      i {
+        display: none;
+      }
+    }
+
+    .socials {
+      flex-direction: row;
+      justify-content: center;
+      width: fit-content;
+
+      i {
+        margin-left: 50px;
+        font-size: 2.5rem;
+
+        &:hover {
+          color: gold;
+          transition: 1s ease;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .nav-menu {
+      position: static;
+      top: 0;
+      background-color: transparent;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+      ul {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .nav-item {
+        font-size: 1.1rem;
+        --clippy: polygon(0 0, 0 0, 0 94%, 0% 100%);
+
+        &::after {
+          content: " ";
+          display: block;
+          background: #fff;
+          width: 90%;
+          margin-top: 3px;
+          height: 1px;
+          clip-path: var(--clippy);
+          transition: clip-path 0.3s;
+        }
+
+        &:hover {
+          color: gold;
+          cursor: pointer;
+          --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+    }
+  }
+}
