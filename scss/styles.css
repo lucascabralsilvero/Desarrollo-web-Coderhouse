@@ -234,6 +234,129 @@ header .socials i:hover {
   }
 }
 
+.footer {
+  grid-area: footer;
+}
+
+footer {
+  background-color: black;
+  font-family: 'PT Serif', serif;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logo-footer-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+footer .logo-footer-container .logo-footer {
+  width: 60px;
+  margin-right: 10px;
+}
+
+footer .logo-footer-container h3 {
+  letter-spacing: 2px;
+  font-size: 1em;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 18px;
+}
+
+footer .copyright .author {
+  color: white;
+}
+
+footer .copyright .author:hover {
+  color: gold;
+  cursor: pointer;
+}
+
+footer .socials-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+}
+
+footer .socials-footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+footer .socials-footer i {
+  color: white;
+  font-size: 2rem;
+}
+
+footer .socials-footer i:hover {
+  color: gold;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+/*----------------------
+ Tablet Responsive Start
+ ----------------------- */
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.1rem;
+}
+
+footer .socials-footer i {
+  font-size: 2.3rem;
+}
+
+/*-----------------------
+ Desktop Responsive Start
+ ------------------------ */
+@media screen and (min-width: 1200px) {
+  .follow {
+    font-size: 1.5rem;
+  }
+  .socials-footer i {
+    font-size: 2.5rem;
+  }
+}
+
 /* Configuración Global */
 * {
   -webkit-box-sizing: border-box;
