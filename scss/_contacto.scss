@@ -1,0 +1,136 @@
+
+.contact-title {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    display: none;
+    animation: bounce 1.5s infinite;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    height: 38rem;
+    background-color: black;
+    border-radius: 1rem;
+    width: 25rem;
+
+    input {
+      border-radius: 5px;
+      width: 18rem;
+      height: 2rem;
+      outline: none;
+      padding: 10px;
+
+      &::placeholder {
+        color: grey;
+      }
+    }
+
+    textarea {
+      border-radius: 5px;
+      width: 18rem;
+      resize: none;
+      outline: none;
+      padding: 10px;
+      margin-top: 10px;
+      height: 210px;
+    }
+
+    .send input {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 1.8rem;
+    }
+  }
+}
+
+/*Tablet responsive Start*/
+
+@media screen and (min-width: 768px) {
+
+    .contact-title {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+      }
+  .contact-container {
+    img {
+      display: none;
+    }
+  }
+}
+/*Tablet responsive End*/
+
+/*Desktop responsive Start*/
+
+@media screen and (min-width: 1200px) {
+    
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    img {
+      display: inline;
+      width: 40rem;
+    }
+
+    form {
+      .send {
+        input {
+          &:hover {
+            background-color: goldenrod;
+            color: white;
+            transition: 0.3s ease;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contact-container {
+    img {
+      width: 45rem;
+    }
+
+    form {
+      width: 30rem;
+
+      input {
+        height: 2.5rem;
+        width: 22rem;
+      }
+
+      textarea {
+        width: 22rem;
+      }
+    }
+
+    .send {
+      input {
+        &:hover {
+          background-color: goldenrod;
+          color: white;
+          transition: 0.3s ease;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
