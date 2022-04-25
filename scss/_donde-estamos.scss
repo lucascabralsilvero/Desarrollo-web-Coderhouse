@@ -1,0 +1,100 @@
+.where-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .where-title {
+    font-size: 1.5rem;
+  }
+
+  .direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 30rem;
+      animation: bounce 1.5s infinite;
+    }
+  }
+
+  .map {
+    margin-top: 2rem;
+    width: 25rem;
+    height: 20rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/*Tablet responsive Start*/
+
+@media screen and (min-width: 768px) {
+  .where-grid-container {
+    .where-title {
+      font-size: 2rem;
+    }
+
+    .direction {
+      ul {
+        li {
+          font-size: 1.5rem;
+        }
+      }
+
+      img {
+        width: 42rem;
+      }
+    }
+    .map {
+      width: 40rem;
+      height: 25rem;
+    }
+  }
+}
+/*Tablet responsive end*/
+
+/*Desktop responsive start*/
+
+@media screen and (min-width: 1200px) {
+  .where-grid-container {
+    flex-direction: row;
+    justify-content: center;
+
+    .where-title {
+      margin-top: 1rem;
+    }
+
+    .direction {
+      margin-bottom: 3rem;
+      img {
+        width: 30rem;
+        margin-left: 3rem;
+      }
+    }
+    .map {
+      width: 30rem;
+      margin-left: 10%;
+      margin-bottom: 3rem;
+      height: 30rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .where-grid-container {
+    justify-content: space-evenly;
+
+    .direction {
+      margin-left: 10%;
+
+      img {
+        width: 40rem;
+      }
+    }
+    .map {
+      width: 50rem;
+      margin-right: 10%;
+      margin-bottom: 7%;
+    }
+  }
+}

@@ -728,6 +728,115 @@ h2 {
   }
 }
 
+.where-grid-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.where-grid-container .where-title {
+  font-size: 1.5rem;
+}
+
+.where-grid-container .direction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.where-grid-container .direction img {
+  width: 30rem;
+  -webkit-animation: bounce 1.5s infinite;
+          animation: bounce 1.5s infinite;
+}
+
+.where-grid-container .map {
+  margin-top: 2rem;
+  width: 25rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+}
+
+/*Tablet responsive Start*/
+@media screen and (min-width: 768px) {
+  .where-grid-container .where-title {
+    font-size: 2rem;
+  }
+  .where-grid-container .direction ul li {
+    font-size: 1.5rem;
+  }
+  .where-grid-container .direction img {
+    width: 42rem;
+  }
+  .where-grid-container .map {
+    width: 40rem;
+    height: 25rem;
+  }
+}
+
+/*Tablet responsive end*/
+/*Desktop responsive start*/
+@media screen and (min-width: 1200px) {
+  .where-grid-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .where-grid-container .where-title {
+    margin-top: 1rem;
+  }
+  .where-grid-container .direction {
+    margin-bottom: 3rem;
+  }
+  .where-grid-container .direction img {
+    width: 30rem;
+    margin-left: 3rem;
+  }
+  .where-grid-container .map {
+    width: 30rem;
+    margin-left: 10%;
+    margin-bottom: 3rem;
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .where-grid-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .where-grid-container .direction {
+    margin-left: 10%;
+  }
+  .where-grid-container .direction img {
+    width: 40rem;
+  }
+  .where-grid-container .map {
+    width: 50rem;
+    margin-right: 10%;
+    margin-bottom: 7%;
+  }
+}
+
 .footer {
   grid-area: footer;
 }
