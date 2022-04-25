@@ -55,7 +55,7 @@
     grid-column-start: 1;
     grid-column-end: -1;
     text-align: center;
-    background-color: grey;
+    background-color: $title-background;
     width: 90%;
     margin-left: 5%;
     margin-bottom: 5%;
@@ -172,8 +172,8 @@
                 letter-spacing: 0.3rem;
 
                 &:hover{
-                    background-color: goldenrod;
-                    color: white;
+                    background-color: $hover-text;
+                    color: $color-text-bars;
                     cursor: pointer;
                 }
             }

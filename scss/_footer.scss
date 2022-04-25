@@ -3,9 +3,9 @@
 }
 
 footer {
-  background-color: black;
+  background-color: $main-color;
   font-family: "PT Serif", serif;
-  color: white;
+  color: $color-text-bars;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -34,10 +34,10 @@ footer {
     font-size: 18px;
 
     .author {
-      color: white;
+      color: $color-text-bars;
 
       &:hover {
-        color: gold;
+        color: $hover-socials;
         cursor: pointer;
       }
     }
@@ -62,11 +62,11 @@ footer {
     }
 
     i {
-      color: white;
+      color: $color-text-bars;
       font-size: 2rem;
 
       &:hover {
-        color: gold;
+        color: $hover-socials;
         transition: 1s ease;
         cursor: pointer;
       }
