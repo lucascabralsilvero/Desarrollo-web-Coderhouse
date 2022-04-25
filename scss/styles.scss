@@ -1,7 +1,8 @@
 /* Imports */
 @import "header";  
-@import "footer";
 @import "inicio";
+@import "footer";
+
 
 /* Configuración Global */
 
@@ -21,5 +22,5 @@ html{
       "header" 120px
       "main" auto
       "footer" 120px;
-    min-height: 100%;
+    min-height: 100%; 
 }
