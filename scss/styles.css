@@ -425,18 +425,18 @@ h2 {
   .slider .dots label {
     height: 1.5rem;
     width: 1.5rem;
-    margin-right: 5rem;
+    margin-left: 4rem;
   }
   h2 {
     font-size: 1.7rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
   }
   .primeraFila,
   .segundaFila {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 8rem;
+    padding-right: 4rem;
   }
   .primeraFila img,
   .segundaFila img {
@@ -459,6 +459,19 @@ h2 {
   .primeraFila > div,
   .segundaFila > div {
     margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .dots label {
+    margin-right: 5rem;
+  }
+  h2 {
+    padding-right: 5rem;
+  }
+  .primeraFila,
+  .segundaFila {
+    padding-right: 8rem;
   }
 }
 
