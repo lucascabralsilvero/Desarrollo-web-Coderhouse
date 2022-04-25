@@ -140,13 +140,12 @@ header {
       .logo {
         width: 3.125rem;
       }
-
-      .socials {
+    }
+    .socials {
         i {
           font-size: 2.3rem;
         }
       }
-    }
   }
 }
 
@@ -191,37 +190,41 @@ header {
       }
     }
 
-    .nav-menu{
-      position: static;
-      top: 0;
-      background-color: transparent;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    .hamburger {
+      .nav-menu {
+        position: static;
+        top: 0;
+        background-color: transparent;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
-      ul{
-        flex-direction:row;
-        justify-content: space-around;
-      }
+        ul {
+          flex-direction: row;
+          justify-content: space-around;
 
-      .nav-item {
-        font-size: 1.1rem;
-        --clippy: polygon(0 0, 0 0, 0 94%, 0% 100%);
+          .nav-item {
+            font-size: 1.1rem;
+          --clippy: polygon(0 0, 0 0, 0 94%, 0% 100%);
 
-        &::after {
-          content: " ";
-          display: block;
-          background: #fff;
-          width: 90%;
-          margin-top: 3px;
-          height: 1px;
-          clip-path: var(--clippy);
-          transition: clip-path 0.3s;
+          &:hover {
+            color: gold;
+            cursor: pointer;
+            --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          }
+
+          &::after {
+            content: " ";
+            display: block;
+            background: #fff;
+            width: 90%;
+            margin-top: 3px;
+            height: 1px;
+            clip-path: var(--clippy);
+            transition: clip-path 0.3s;
+          }       
+        }
         }
 
-        &:hover {
-          color: gold;
-          cursor: pointer;
-          --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        }
+      
       }
     }
   }

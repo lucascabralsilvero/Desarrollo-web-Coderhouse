@@ -162,7 +162,7 @@ header .socials i:hover {
   header .logo-container .logo {
     width: 3.125rem;
   }
-  header .logo-container .socials i {
+  header .socials i {
     font-size: 2.3rem;
   }
 }
@@ -211,14 +211,14 @@ header .socials i:hover {
     transition: 1s ease;
     cursor: pointer;
   }
-  header .nav-menu {
+  header .hamburger .nav-menu {
     position: static;
     top: 0;
     background-color: transparent;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  header .nav-menu ul {
+  header .hamburger .nav-menu ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -226,11 +226,16 @@ header .socials i:hover {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  header .nav-menu .nav-item {
+  header .hamburger .nav-menu ul .nav-item {
     font-size: 1.1rem;
     --clippy: polygon(0 0, 0 0, 0 94%, 0% 100%);
   }
-  header .nav-menu .nav-item::after {
+  header .hamburger .nav-menu ul .nav-item:hover {
+    color: gold;
+    cursor: pointer;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .hamburger .nav-menu ul .nav-item::after {
     content: " ";
     display: block;
     background: #fff;
@@ -243,11 +248,6 @@ header .socials i:hover {
     transition: -webkit-clip-path 0.3s;
     transition: clip-path 0.3s;
     transition: clip-path 0.3s, -webkit-clip-path 0.3s;
-  }
-  header .nav-menu .nav-item:hover {
-    color: gold;
-    cursor: pointer;
-    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
@@ -549,6 +549,11 @@ footer .socials-footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100px;
+}
+
+footer .socials-footer .follow {
+  font-size: 1.4rem;
+  letter-spacing: 5px;
 }
 
 footer .socials-footer .social-icons {
