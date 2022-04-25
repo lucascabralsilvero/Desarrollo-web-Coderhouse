@@ -160,7 +160,8 @@
         label {
           height: 1.5rem;
           width: 1.5rem;
-          margin-right: 3rem;
+          margin-right: 5rem;
+          
         }
       }
   }
@@ -169,13 +170,13 @@
 
   h2 {
     font-size: 1.7rem;
+    padding-right: 5rem;
   }
 
   .primeraFila,
   .segundaFila {
     justify-content: center;
-    background-color: red;
-    padding-right: 10rem;
+    padding-right: 8rem;
 
     img {
       filter: none;

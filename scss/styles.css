@@ -425,18 +425,18 @@ h2 {
   .slider .dots label {
     height: 1.5rem;
     width: 1.5rem;
-    margin-right: 3rem;
+    margin-right: 5rem;
   }
   h2 {
     font-size: 1.7rem;
+    padding-right: 5rem;
   }
   .primeraFila,
   .segundaFila {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: red;
-    padding-right: 10rem;
+    padding-right: 8rem;
   }
   .primeraFila img,
   .segundaFila img {
