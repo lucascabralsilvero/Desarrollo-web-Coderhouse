@@ -1,0 +1,192 @@
+.sabores-grid-container {
+  display: grid;
+  grid-template:
+    "cremas"
+    "dulce-de-leche"
+    "frutales"
+    "chocolates"
+    "veganos"
+    "especiales"
+    "postres"
+    "sin-lactosa";
+
+  .cremas {
+    grid-area: cremas;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dulce-de-leche {
+    grid-area: dulce-de-leche;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .frutales {
+    grid-area: frutales;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .chocolates {
+    grid-area: chocolates;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .veganos {
+    grid-area: veganos;
+  }
+
+  .especiales {
+    grid-area: especiales;
+  }
+
+  .postres {
+    grid-area: postres;
+  }
+
+  .sin-lactosa {
+    grid-area: sin-lactosa;
+  }
+
+  div > h3 {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+    background-color: grey;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .flavours-card {
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 10rem;
+      filter: drop-shadow(0 0 0.4rem rgb(95, 92, 92));
+      border-radius: 1rem;
+    }
+  }
+
+  .primera-fila-sabores {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .segunda-fila-sabores {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/*Tablet responsive start*/
+
+@media screen and (min-width: 768px) {
+  .sabores-grid-container {
+    .cremas {
+      grid-template-columns: auto;
+    }
+
+    .dulce-de-leche {
+      grid-template-columns: auto;
+    }
+
+    .frutales {
+      grid-template-columns: auto;
+    }
+
+    .chocolates {
+      grid-template-columns: auto;
+    }
+
+    .flavours-card {
+      img {
+        width: 8.5rem;
+      }
+    }
+
+    .primera-fila-sabores {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .segunda-fila-sabores {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+/*Desktop responsive Start*/
+
+@media screen and (min-width: 1200px) {
+  .sabores-grid-container {
+    div {
+      h3 {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+
+  .flavours-card {
+    img {
+      width: 10rem;
+
+      &:hover {
+        transform: scale(1.1);
+        transition-timing-function: ease-in-out;
+        filter: drop-shadow(0 0 1rem rgb(95, 92, 92));
+        cursor: pointer;
+      }
+    }
+
+    p {
+      padding-top: 0.5rem;
+    }
+  }
+
+  .primera-fila-sabores {
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+
+  .segunda-fila-sabores {
+    justify-content: space-evenly;
+  }
+}
+
+
+@media screen and (min-width:1600px){
+
+    .sabores-grid-container{
+        div{
+            h3{
+                width: 85%;
+                margin-left:7.5%;
+                margin-bottom: 3rem;
+                letter-spacing: 0.3rem;
+
+                &:hover{
+                    background-color: goldenrod;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .flavours-card{
+            img{
+                width: 15rem;;
+            }
+
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
