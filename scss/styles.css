@@ -664,6 +664,70 @@ h2 {
   }
 }
 
+.about-grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "team-work" "story";
+}
+
+.about-grid-container .team-work {
+  grid-area: team-work;
+  text-align: center;
+}
+
+.about-grid-container .story {
+  grid-area: story;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-grid-container .story h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-grid-container img {
+  width: 25rem;
+  -webkit-animation: bounce 1.5s infinite;
+          animation: bounce 1.5s infinite;
+}
+
+/* Tablet responsive Start */
+@media screen and (min-width: 768px) {
+  .about-grid-container img {
+    width: 35rem;
+  }
+}
+
+/* Desktop responsive Start*/
+@media screen and (min-width: 1200px) {
+  .about-grid-container img {
+    width: 40rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .about-grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-grid-container .team-work {
+    margin-bottom: 2rem;
+    margin-left: 5%;
+  }
+  .about-grid-container .story {
+    width: 40%;
+    margin-left: 10%;
+  }
+  .about-grid-container img {
+    width: 45rem;
+  }
+}
+
 .footer {
   grid-area: footer;
 }
