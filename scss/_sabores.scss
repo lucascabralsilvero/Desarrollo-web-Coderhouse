@@ -91,15 +91,15 @@
     }
 
     .dulce-de-leche {
-      @extend .cremas; 
+      grid-template-columns: auto;
     }
 
     .frutales {
-      @extend .cremas; 
+      grid-template-columns: auto;
     }
 
     .chocolates {
-      @extend .cremas; 
+      grid-template-columns: auto;
     }
 
     .flavours-card {
@@ -113,7 +113,8 @@
       justify-content: space-evenly;
     }
     .segunda-fila-sabores {
-      @extend .primera-fila-sabores;
+      display: flex;
+      justify-content: space-evenly;
     }
   }
 }
