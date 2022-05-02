@@ -79,9 +79,7 @@
   }
 
   .segunda-fila-sabores {
-    display: grid;
-    justify-content: center;
-    text-align: center;
+    @extend .primera-fila-sabores;
   }
 }
 
@@ -94,15 +92,15 @@
     }
 
     .dulce-de-leche {
-      grid-template-columns: auto;
+      @extend .cremas; 
     }
 
     .frutales {
-      grid-template-columns: auto;
+      @extend .cremas; 
     }
 
     .chocolates {
-      grid-template-columns: auto;
+      @extend .cremas; 
     }
 
     .flavours-card {
@@ -116,8 +114,7 @@
       justify-content: space-evenly;
     }
     .segunda-fila-sabores {
-      display: flex;
-      justify-content: space-evenly;
+      @extend .primera-fila-sabores;
     }
   }
 }
