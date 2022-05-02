@@ -1,0 +1,11 @@
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+@mixin areas($area) {
+    grid-area: $area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
