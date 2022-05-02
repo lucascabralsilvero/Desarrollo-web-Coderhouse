@@ -1,3 +1,10 @@
+@mixin areas($area) {
+    grid-area: $area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 .sabores-grid-container {
   display: grid;
   grid-template:
@@ -11,27 +18,19 @@
     "sin-lactosa";
 
   .cremas {
-    grid-area: cremas;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include areas(cremas); 
   }
 
   .dulce-de-leche {
-    grid-area: dulce-de-leche;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include areas(dulce-de-leche); 
   }
 
   .frutales {
-    grid-area: frutales;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include areas(frutales); 
   }
 
   .chocolates {
-    grid-area: chocolates;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include areas(chocolates); 
   }
 
   .veganos {
