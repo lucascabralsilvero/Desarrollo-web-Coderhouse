@@ -8,7 +8,7 @@
   }
 
   .direction {
-   @extend .where-grid-container;
+   @include flex;
 
     img {
       width: 30rem;
