@@ -80,18 +80,9 @@
 
 @media screen and (min-width: 768px) {
   .sabores-grid-container {
-    .cremas {
-      grid-template-columns: auto;
-    }
-
-    .dulce-de-leche {
-      grid-template-columns: auto;
-    }
-
-    .frutales {
-      grid-template-columns: auto;
-    }
-
+    .cremas,
+    .dulce-de-leche,
+    .frutales,
     .chocolates {
       grid-template-columns: auto;
     }
@@ -102,10 +93,7 @@
       }
     }
 
-    .primera-fila-sabores {
-      display: flex;
-      justify-content: space-evenly;
-    }
+    .primera-fila-sabores,
     .segunda-fila-sabores {
       display: flex;
       justify-content: space-evenly;

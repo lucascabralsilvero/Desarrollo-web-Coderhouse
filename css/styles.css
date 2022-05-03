@@ -566,18 +566,9 @@ h2 {
 
 /*Tablet responsive start*/
 @media screen and (min-width: 768px) {
-  .sabores-grid-container .cremas {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .sabores-grid-container .dulce-de-leche {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .sabores-grid-container .frutales {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
+  .sabores-grid-container .cremas,
+  .sabores-grid-container .dulce-de-leche,
+  .sabores-grid-container .frutales,
   .sabores-grid-container .chocolates {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -585,14 +576,7 @@ h2 {
   .sabores-grid-container .flavours-card img {
     width: 8.5rem;
   }
-  .sabores-grid-container .primera-fila-sabores, .sabores-grid-container .segunda-fila-sabores {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
+  .sabores-grid-container .primera-fila-sabores, .sabores-grid-container .segunda-fila-sabores,
   .sabores-grid-container .segunda-fila-sabores {
     display: -webkit-box;
     display: -ms-flexbox;
