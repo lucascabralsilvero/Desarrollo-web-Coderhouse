@@ -1,0 +1,62 @@
+ -------
+|Cambios|
+ -------
+- Agregar meta description y keywords. 
+- Completar títulos.
+- Agrego Extend
+- Agrego Mixins
+- optimización img
+ 
+
+Index
+-----
+Kw: content="Helados, Makalu, frutilla, cereza, dulce de leche, heladeria, cucurucho, chocolate".
+Desc: content="Veni a probar los mejores y más ricos helados artesanales,disponemos una amplia cantidad de sabores para que nadie se quede con las ganas!"
+Title: Makalu Helados | Inicio. 
+
+Header
+------
+- Agrego Mixin flex. 
+
+Sabores
+-------
+Kw: content="frutilla, cereza, frutilla, dulce de leche, cremas, frutales, especiales, veganos, sabores, Makalu, Helados"
+Desc: content="Descubrí nuestra amplia carta de sabores, para que no te quedes sin disfrutar tu helado favorito, además disponemos de alternativas especiales y veganas!"
+Title: Makalu Helados | Sabores. 
+
+- Agrego Mixin areas.
+
+Sobre Nosotros
+--------------
+Kw: content="empresa, makalu, helados, nosotros, origenes, receta, fundación".
+Desc: content="Conocé la historia de nuestra empresa y como comenzamos con este negocio que se volvió tradición". 
+Title: Makalu Helados | Sobre nosotros. 
+
+- Agrego extend .primera-fila-sabores.
+
+Dónde estamos? 
+--------------
+Kw: content="donde estamos, encontranos, direccion, mapa, telefono, calle, Makalu, helados"
+Desc: content="Conocé la ubicación de nuestros locales y nuestros números de contacto para que puedas disfrutar de nuestros deliciosos helados!"
+Title: Makalu Helados | ¿Dónde estamos?.
+
+- Agrego mixin flex.
+
+Contacto
+-------
+Kw: content="contacto, makalu, helados,comunicarse, mensajes, formulario, contactar" 
+Desc: content="¿Tenes alguna duda sobre nosotros o nuestros productos? contactate con nosotros y despeja tus dudas!"
+Title: Makalu Helados | Contacto. 
+
+- Agrego mixin flex.
+
+
+Compresión Img Carrusel
+----------------------------
+ice-cream-1 - 400 kb -> 170kb
+ice-cream-2 - 345 kb -> 168kb
+ice-cream-3 - 433 kb -> 156kb
+ice-cream-4 - 579 kb -> 201kb
+
+
+
