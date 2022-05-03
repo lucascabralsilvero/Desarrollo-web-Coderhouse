@@ -132,7 +132,7 @@ header {
 
     .logo-container {
       .logo {
-        width: 3.125rem;
+        width: 3rem;
       }
     }
     .socials {
@@ -152,6 +152,7 @@ header {
     .logo-container {
       order: -1;
       margin-right: 2rem;
+
 
       .logo {
         &:hover {
