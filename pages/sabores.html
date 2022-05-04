@@ -7,11 +7,11 @@
     <meta name="description" content="Descubrí nuestra amplia carta de sabores, para que no te quedes sin disfrutar tu helado favorito, además disponemos de alternativas especiales y veganas!">
     <meta name="keywords" content="frutilla, cereza, frutilla, dulce de leche, cremas, frutales, especiales, veganos, sabores, Makalu, Helados">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="shortcut icon" href="../assets/favicon/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@200;300&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Makalu Helados | Sabores</title>
 </head>
 <body class="grid-container">
@@ -44,9 +44,9 @@
 
     <main class="main">
       <section class="sabores-grid-container">
-        <div class="cremas">
+        <div class="cremas" id="cremas">
           <h3>Cremas</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInLeft" data-wow-duration="1.5s">
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="1.5s">
             <div class="flavours-card">
             <img src="../assets/flavours-images/Crema/Crema-Americana.png" alt="Crema Americana">
            <p>Americana</p>
@@ -64,7 +64,7 @@
            <p>Tiramisú</p>
           </div>
           </div>
-          <div class="segunda-fila-sabores wow animate__animated animate__bounceInRight" data-wow-duration="1.5s" >
+          <div class="segunda-fila-sabores wow animate__animated animate__pulse" data-wow-duration="2s" >
            <div class="flavours-card">
              <img src="../assets/flavours-images/Crema/Cremas-Granizado.png" alt="Granizado">
              <p>Granizado</p>
@@ -79,14 +79,15 @@
            </div>
            <div class="flavours-card">
              <img src="../assets/flavours-images/Crema/Cremas-Vainilla.png" alt="Vainilla">
-             <p>Vainilla</p>
+             <p id="anchor">Vainilla</p>
            </div>
                 </div>
         </div>
 
         <div class="dulce-de-leche">
+          <a id="anchor-dulce"></a>
           <h3>Dulce de leche</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInLeft" data-wow-duration="1.5s"> 
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="1.5s"> 
             <div class="flavours-card">
               <img src="../assets/flavours-images/Dulce-de-leche/Dulce-Clasico.png" alt="Dulce Clásico" />
               <p>Clásico</p>
@@ -104,7 +105,7 @@
               <p>Makalu</p>
             </div>
           </div>
-          <div class="segunda-fila-sabores wow animate__animated animate__bounceInRight" data-wow-duration="1.5s">
+          <div class="segunda-fila-sabores wow animate__animated animate__pulse" data-wow-duration="2s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Dulce-de-leche/Dulce-Oreo.png" alt="Dulce Oreo" />
               <p>Oreo</p>
@@ -119,14 +120,15 @@
             </div>
             <div class="flavours-card">
               <img src="../assets/flavours-images/Dulce-de-leche/Dulce-Vauquita.png" alt="Dulce Vauquita" />
-              <p>Vauquita</p>
+              <p >Vauquita</p>
             </div>
           </div>
         </div>
 
         <div class="frutales">
+          <a id="anchor-fruta"></a>
           <h3>Frutales</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInLeft" data-wow-duration="1.5s">
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="1.5s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Frutales/Frutales-Arándanos.png" alt="Arándanos" />
               <p>Arándanos</p>
@@ -144,7 +146,7 @@
               <p>Frutos del bosque</p>
             </div>
           </div>
-          <div class="segunda-fila-sabores wow animate__animated animate__bounceInRight" data-wow-duration="1.5s">
+          <div class="segunda-fila-sabores wow animate__animated animate__pulse" data-wow-duration="2s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Frutales/Frutales-Limón.png" alt="Limón">
               <p>Limón</p>
@@ -158,15 +160,17 @@
               <p>Patagónica</p>
             </div>
             <div class="flavours-card">
+              
               <img src="../assets/flavours-images/Frutales/Frutales-MousseLimon.png" alt="Mousse Limón">
-              <p>Mousse Limón</p>
+              <p  id="anchor-3">Mousse Limón</p>
             </div>
           </div>
         </div>
 
         <div class="chocolates">
+          <a id="anchor-choco"></a>
           <h3>Chocolates</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInLeft" data-wow-duration="1.5s">
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="1.5s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Chocolate/Choco-Almendras.png" alt="Almendras" />
               <p>Almendras</p>
@@ -184,7 +188,7 @@
               <p>Caramelizado</p>
             </div>
           </div>
-          <div class="segunda-fila-sabores wow animate__animated animate__bounceInRight" data-wow-duration="1.5s">
+          <div class="segunda-fila-sabores wow animate__animated animate__pulse" data-wow-duration="2s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Chocolate/Choco-Clásico.png" alt="Clásico">
               <p>Clásico</p>
@@ -199,14 +203,15 @@
             </div>
             <div class="flavours-card">
               <img src="../assets/flavours-images/Chocolate/Choco-Tentación.png" alt="Tentación">
-              <p>Tentación</p>
+              <p id="anchor-4">Tentación</p>
             </div>
           </div>
         </div>
 
         <div class="veganos">
+          <a id="anchor-vegan"></a>
           <h3>Veganos</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInLeft" data-wow-duration="1.5s">
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="1.5s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Veganos/Veggie-Banana Split.png" alt="Banana Vegano">
               <p>Banana</p>
@@ -221,14 +226,15 @@
             </div>
             <div class="flavours-card">
               <img src="../assets/flavours-images/Veganos/Veggie-Limon.png" alt="Limón Vegano">
-              <p>Limón</p>
+              <p id="anchor-5">Limón</p>
             </div>
           </div>
         </div>
 
         <div class="especiales">
+          <a id="anchor-especial"></a>
           <h3>Especiales</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInRight" data-wow-duration="1.5s">
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="2s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Especiales/Especial-Kinotos al Whisky.png" alt="Kinotos Whisky">
               <p>Kinotos al Whisky</p>
@@ -243,14 +249,15 @@
             </div>
             <div class="flavours-card">
               <img src="../assets/flavours-images/Especiales/Especial-Pistacho.png" alt="Pistacho">
-              <p>Pistacho</p>
+              <p id="anchor-6">Pistacho</p>
             </div>
           </div>
         </div>
 
         <div class="postres">
+          <a id="anchor-postres"></a>
           <h3>Postres</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInLeft" data-wow-duration="1.5s">
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="1.5s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Postres/Postres-Almendrado.png" alt="Postre Almendrado" />
               <p>Almendrado</p>
@@ -271,8 +278,9 @@
         </div>
         
         <div class="sin-lactosa">
-          <h3>Sin Lactosa</h3>
-          <div class="primera-fila-sabores wow animate__animated animate__bounceInRight" data-wow-duration="1.5s">
+          <a id="anchor-lacto"></a>
+          <h3 id="anchor-7">Sin Lactosa</h3>
+          <div class="primera-fila-sabores wow animate__animated animate__pulse" data-wow-duration="2s">
             <div class="flavours-card">
               <img src="../assets/flavours-images/Sin-Lactosa/Sin Lac-Banana.png" alt="Sin Lactosa Banana" />
               <p>Banana</p>

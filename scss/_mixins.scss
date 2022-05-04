@@ -9,3 +9,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+@mixin hidden-anchor{
+      position: relative;
+      top: -100px;
+      visibility: hidden;
+}

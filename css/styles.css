@@ -498,12 +498,24 @@ h2 {
       grid-template-columns: 1fr 1fr;
 }
 
+.sabores-grid-container .dulce-de-leche #anchor-dulce {
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 .sabores-grid-container .frutales {
   grid-area: frutales;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+.sabores-grid-container .frutales #anchor-fruta {
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
 
 .sabores-grid-container .chocolates {
@@ -514,20 +526,50 @@ h2 {
       grid-template-columns: 1fr 1fr;
 }
 
+.sabores-grid-container .chocolates #anchor-choco {
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 .sabores-grid-container .veganos {
   grid-area: veganos;
+}
+
+.sabores-grid-container .veganos #anchor-vegan {
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
 
 .sabores-grid-container .especiales {
   grid-area: especiales;
 }
 
+.sabores-grid-container .especiales #anchor-especial {
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 .sabores-grid-container .postres {
   grid-area: postres;
 }
 
+.sabores-grid-container .postres #anchor-postres {
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 .sabores-grid-container .sin-lactosa {
   grid-area: sin-lactosa;
+}
+
+.sabores-grid-container .sin-lactosa #anchor-lacto {
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
 
 .sabores-grid-container div > h3 {

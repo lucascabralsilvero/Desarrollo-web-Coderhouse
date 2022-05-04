@@ -17,30 +17,55 @@
 
   .dulce-de-leche {
     @include areas(dulce-de-leche); 
+
+    #anchor-dulce{
+      @include hidden-anchor;
+    }
   }
 
   .frutales {
     @include areas(frutales); 
+
+    #anchor-fruta{
+      @include hidden-anchor;
+
+    }
   }
 
   .chocolates {
     @include areas(chocolates); 
+    #anchor-choco{
+      @include hidden-anchor;
+
+    }
   }
 
   .veganos {
     grid-area: veganos;
+    #anchor-vegan{
+      @include hidden-anchor;
+    }
   }
 
   .especiales {
     grid-area: especiales;
+    #anchor-especial{
+      @include hidden-anchor;
+    }
   }
 
   .postres {
     grid-area: postres;
+    #anchor-postres{
+      @include hidden-anchor;
+    }
   }
 
   .sin-lactosa {
     grid-area: sin-lactosa;
+    #anchor-lacto{
+      @include hidden-anchor;
+    }
   }
 
   div > h3 {
@@ -64,7 +89,7 @@
       border-radius: 1rem;
     }
   }
-
+  
   .primera-fila-sabores {
     display: grid;
     justify-content: center;
