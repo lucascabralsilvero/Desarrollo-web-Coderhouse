@@ -73,6 +73,7 @@
     grid-column-start: 1;
     grid-column-end: -1;
     text-align: center;
+    letter-spacing: 0.3rem;
     background-color: $title-background;
     width: 90%;
     margin-left: 5%;
@@ -173,8 +174,6 @@
                 width: 85%;
                 margin-left:7.5%;
                 margin-bottom: 3rem;
-                letter-spacing: 0.3rem;
-
                 &:hover{
                     background-color: $hover-text;
                     color: $color-text-bars;
