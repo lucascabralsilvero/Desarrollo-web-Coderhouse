@@ -33,6 +33,7 @@ Desc: content="Conocé la historia de nuestra empresa y como comenzamos con este
 Title: Makalu Helados | Sobre nosotros. 
 
 - Agrego extend .primera-fila-sabores.
+- Agrego mixin hidden-anchor.
 
 Dónde estamos? 
 --------------
