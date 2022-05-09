@@ -635,6 +635,11 @@ h2 {
   .sabores-grid-container div h3 {
     margin-top: 2.5rem;
   }
+  .sabores-grid-container div h3:hover {
+    background-color: goldenrod;
+    color: white;
+    cursor: pointer;
+  }
   .flavours-card img {
     width: 10rem;
   }
@@ -668,11 +673,6 @@ h2 {
     width: 85%;
     margin-left: 7.5%;
     margin-bottom: 3rem;
-  }
-  .sabores-grid-container div h3:hover {
-    background-color: goldenrod;
-    color: white;
-    cursor: pointer;
   }
   .sabores-grid-container .flavours-card img {
     width: 15rem;
