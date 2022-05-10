@@ -777,14 +777,14 @@ h2 {
 }
 
 .where-grid-container .direction img {
-  width: 30rem;
+  width: 25rem;
   -webkit-animation: bounce 1.5s infinite;
           animation: bounce 1.5s infinite;
 }
 
 .where-grid-container .map {
   margin-top: 2rem;
-  width: 25rem;
+  width: 23rem;
   height: 20rem;
   margin-bottom: 3rem;
 }
